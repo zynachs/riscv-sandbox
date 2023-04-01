@@ -6,7 +6,7 @@ INCLUDE_DIR?=include
 COMMON_DIR?=common
 
 KERNEL=${BUILD_DIR}/a.out
-CSRC=${addprefix ${APP_DIR}/, main.c aes128.c}
+CSRC=${addprefix ${APP_DIR}/, main.c}
 INC=${wildcard ${INCLUDE_DIR}/*.h}
 LDS=${addprefix ${COMMON_DIR}/, linker.ld}
 ASSRC=${addprefix ${COMMON_DIR}/, start.S}
